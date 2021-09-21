@@ -25,4 +25,4 @@ else {
 
 write-output "Email address added"
 Read-Host -Prompt 'press any key to close'
-Disconnect-ExchangeOnline -Confirm
+Disconnect-ExchangeOnline
