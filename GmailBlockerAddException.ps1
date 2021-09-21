@@ -20,9 +20,9 @@ else {
     
     $safesenderlist += $NewEmail
     Write-Output $safesenderlist
-    Set-TransportRule -Identity "Gmail Block test" -ExceptIfFrom $safesenderlist
+    Set-TransportRule -Identity "Gmail Block" -ExceptIfFrom $safesenderlist
 }
 
 write-output "Email address added"
-Read-Host -Prompt 'press any key to close'
+Read-Host 'press any key to close'
 Disconnect-ExchangeOnline
